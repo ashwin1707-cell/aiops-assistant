@@ -20,15 +20,38 @@ pipeline {
                 sh 'docker images'
             }
         }
+
+        stage('Deploy Container') {
+            steps {
+                sh '''
+                docker stop aiops-container || true
+                docker rm aiops-container || true
+
+                docker run -d \
+                --name aiops-container \
+                -p 5000:5000 \
+                aiops-assistant:latest
+                '''
+            }
+        }
+
+        stage('Health Check') {
+            steps {
+                sh '''
+                sleep 5
+                docker ps | grep aiops-container
+                '''
+            }
+        }
     }
 
     post {
         success {
-            echo 'Build completed successfully!'
+            echo 'Deployment completed successfully!'
         }
 
         failure {
-            echo 'Build failed.'
+            echo 'Deployment failed.'
         }
     }
 }
