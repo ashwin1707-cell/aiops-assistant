@@ -11,13 +11,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t aiops-assistant:latest .'
+                sh 'docker build -t aiops-assistant:latest .'
             }
         }
 
         stage('Verify Docker') {
             steps {
-                bat 'docker images'
+                sh 'docker images'
             }
         }
     }
@@ -26,6 +26,7 @@ pipeline {
         success {
             echo 'Build completed successfully!'
         }
+
         failure {
             echo 'Build failed.'
         }
