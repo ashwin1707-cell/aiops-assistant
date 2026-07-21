@@ -6,8 +6,6 @@
 
 
 
-
-
 !\[AIOps](https://img.shields.io/badge/AIOps-Assistant-blue)
 
 !\[Python](https://img.shields.io/badge/Python-3.13-green)
@@ -21,8 +19,6 @@
 !\[Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-orange)
 
 !\[Grafana](https://img.shields.io/badge/Grafana-Dashboard-yellow)
-
-
 
 
 
@@ -98,15 +94,11 @@ AI Incident Analysis (Future)
 
 
 
-
-
 \---
 
 
 
 \# 🚀 Features
-
-
 
 
 
@@ -208,15 +200,11 @@ Monitoring stack:
 
 
 
-
-
 \---
 
 
 
 \# 🏗️ Architecture
-
-
 
 
 
@@ -232,7 +220,7 @@ Monitoring stack:
 
 
 
-&#x20;             Jenkins Pipeline
+&#x20;            Jenkins Pipeline
 
 
 
@@ -262,7 +250,7 @@ Monitoring stack:
 
 
 
-&#x20;             Kubernetes Cluster
+&#x20;          Kubernetes Cluster
 
 
 
@@ -308,15 +296,11 @@ Monitoring stack:
 
 
 
-
-
 \---
 
 
 
 \# 🛠️ Technology Stack
-
-
 
 
 
@@ -344,15 +328,11 @@ Monitoring stack:
 
 
 
-
-
 \---
 
 
 
 \# 📂 Project Structure
-
-
 
 
 
@@ -392,8 +372,6 @@ aiops-assistant/
 
 
 
-
-
 \---
 
 
@@ -402,11 +380,7 @@ aiops-assistant/
 
 
 
-
-
 \## Clone Repository
-
-
 
 
 
@@ -422,15 +396,11 @@ cd aiops-assistant
 
 
 
-
-
 \---
 
 
 
 \# 🐍 Run Application Locally
-
-
 
 
 
@@ -446,9 +416,11 @@ python -m venv venv
 
 
 
-
-
 Activate:
+
+
+
+Windows:
 
 
 
@@ -460,9 +432,7 @@ venv\\Scripts\\activate
 
 
 
-
-
-Install packages:
+Install dependencies:
 
 
 
@@ -471,8 +441,6 @@ Install packages:
 pip install -r requirements.txt
 
 ```
-
-
 
 
 
@@ -488,8 +456,6 @@ python app.py
 
 
 
-
-
 Application URL:
 
 
@@ -502,8 +468,6 @@ http://localhost:5000
 
 
 
-
-
 Response:
 
 
@@ -512,17 +476,15 @@ Response:
 
 {
 
-&#x20;"application": "AIOps Assistant",
+&#x20; "application": "AIOps Assistant",
 
-&#x20;"status": "Running",
+&#x20; "status": "Running",
 
-&#x20;"version": "1.0"
+&#x20; "version": "1.0"
 
 }
 
 ```
-
-
 
 
 
@@ -531,8 +493,6 @@ Response:
 
 
 \# 🐳 Docker Deployment
-
-
 
 
 
@@ -548,8 +508,6 @@ docker build -t aiops-assistant:latest .
 
 
 
-
-
 Run container:
 
 
@@ -559,8 +517,6 @@ Run container:
 docker run -d --name aiops-container -p 5000:5000 aiops-assistant:latest
 
 ```
-
-
 
 
 
@@ -576,15 +532,11 @@ docker ps
 
 
 
-
-
 \---
 
 
 
 \# 🔄 Jenkins CI/CD Pipeline
-
-
 
 
 
@@ -624,9 +576,7 @@ Health Check
 
 
 
-
-
-Successful build:
+Successful execution:
 
 
 
@@ -638,15 +588,11 @@ Build completed successfully!
 
 
 
-
-
 \---
 
 
 
 \# ☸️ Kubernetes Deployment
-
-
 
 
 
@@ -662,8 +608,6 @@ minikube start
 
 
 
-
-
 Check nodes:
 
 
@@ -673,8 +617,6 @@ Check nodes:
 kubectl get nodes
 
 ```
-
-
 
 
 
@@ -694,8 +636,6 @@ kubectl apply -f k8s/service.yaml
 
 
 
-
-
 Check pods:
 
 
@@ -705,8 +645,6 @@ Check pods:
 kubectl get pods
 
 ```
-
-
 
 
 
@@ -722,9 +660,7 @@ minikube service aiops-service
 
 
 
-
-
-Example:
+Example response:
 
 
 
@@ -732,17 +668,15 @@ Example:
 
 {
 
-&#x20;"application": "AIOps Assistant",
+&#x20; "application": "AIOps Assistant",
 
-&#x20;"status": "Running",
+&#x20; "status": "Running",
 
-&#x20;"version": "1.0"
+&#x20; "version": "1.0"
 
 }
 
 ```
-
-
 
 
 
@@ -754,9 +688,11 @@ Example:
 
 
 
+\## Prometheus Metrics
 
 
-Prometheus metrics:
+
+Endpoint:
 
 
 
@@ -765,8 +701,6 @@ Prometheus metrics:
 http://localhost:5000/metrics
 
 ```
-
-
 
 
 
@@ -782,8 +716,6 @@ requests\_total 1
 
 
 
-
-
 Metrics collected:
 
 
@@ -796,15 +728,11 @@ Metrics collected:
 
 
 
-
-
 \---
 
 
 
 \# 🔮 Future Enhancements
-
-
 
 
 
@@ -850,15 +778,11 @@ Planned:
 
 
 
-
-
 \---
 
 
 
 \# 📈 Project Status
-
-
 
 
 
@@ -884,8 +808,6 @@ Planned:
 
 
 
-
-
 \---
 
 
@@ -894,15 +816,11 @@ Planned:
 
 
 
-
-
 \## Ashwin
 
 
 
-Aspiring DevOps Engineer | Cloud Engineer
-
-
+\*\*Aspiring DevOps Engineer | Cloud Engineer\*\*
 
 
 
@@ -928,15 +846,11 @@ Skills:
 
 
 
-
-
 \---
 
 
 
 \# ⭐ Project Highlights
-
-
 
 
 
