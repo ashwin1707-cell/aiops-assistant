@@ -6,39 +6,21 @@
 
 
 
-<p align="center">
 
 
+!\[AIOps](https://img.shields.io/badge/AIOps-Assistant-blue)
 
-<img src="https://img.shields.io/badge/AIOps-Assistant-blue?style=for-the-badge\&logo=robot" />
+!\[Python](https://img.shields.io/badge/Python-3.13-green)
 
+!\[Docker](https://img.shields.io/badge/Docker-Containerized-blue)
 
+!\[Kubernetes](https://img.shields.io/badge/Kubernetes-Ready-blue)
 
-<img src="https://img.shields.io/badge/Python-3.13-green?style=for-the-badge\&logo=python" />
+!\[Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-red)
 
+!\[Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-orange)
 
-
-<img src="https://img.shields.io/badge/Docker-Containerized-blue?style=for-the-badge\&logo=docker" />
-
-
-
-<img src="https://img.shields.io/badge/Kubernetes-Ready-blue?style=for-the-badge\&logo=kubernetes" />
-
-
-
-<img src="https://img.shields.io/badge/Jenkins-CI%2FCD-red?style=for-the-badge\&logo=jenkins" />
-
-
-
-<img src="https://img.shields.io/badge/Prometheus-Monitoring-orange?style=for-the-badge\&logo=prometheus" />
-
-
-
-<img src="https://img.shields.io/badge/Grafana-Dashboard-yellow?style=for-the-badge\&logo=grafana" />
-
-
-
-</p>
+!\[Grafana](https://img.shields.io/badge/Grafana-Dashboard-yellow)
 
 
 
@@ -52,99 +34,65 @@
 
 
 
-\*\*AIOps Assistant\*\* is an intelligent DevOps automation platform designed to monitor applications, collect operational metrics, automate deployments, and provide a foundation for AI-powered incident analysis.
+\*\*AIOps Assistant\*\* is a DevOps automation and monitoring platform built using Python Flask, Docker, Jenkins, Kubernetes, Prometheus, and Grafana.
 
 
 
-This project demonstrates a complete modern DevOps lifecycle:
+The project demonstrates a complete DevOps lifecycle:
 
 
 
-```
+```text
 
-&#x20;       👨‍💻 Developer
+Developer
 
+&#x20;   |
 
+&#x20;   v
 
-&#x20;             |
+GitHub Repository
 
-&#x20;             ↓
+&#x20;   |
 
+&#x20;   v
 
+Jenkins CI/CD Pipeline
 
-&#x20;       GitHub Repository
+&#x20;   |
 
+&#x20;   v
 
+Docker Image Build
 
-&#x20;             |
+&#x20;   |
 
-&#x20;             ↓
+&#x20;   v
 
+Container Deployment
 
+&#x20;   |
 
-&#x20;       Jenkins CI/CD Pipeline
+&#x20;   v
 
+Kubernetes Cluster
 
+&#x20;   |
 
-&#x20;             |
+&#x20;   v
 
-&#x20;             ↓
+Prometheus Monitoring
 
+&#x20;   |
 
+&#x20;   v
 
-&#x20;       Docker Image Build
+Grafana Dashboard
 
+&#x20;   |
 
+&#x20;   v
 
-&#x20;             |
-
-&#x20;             ↓
-
-
-
-&#x20;       Container Deployment
-
-
-
-&#x20;             |
-
-&#x20;             ↓
-
-
-
-&#x20;       Kubernetes Cluster
-
-
-
-&#x20;             |
-
-&#x20;             ↓
-
-
-
-&#x20;       Prometheus Monitoring
-
-
-
-&#x20;             |
-
-&#x20;             ↓
-
-
-
-&#x20;       Grafana Visualization
-
-
-
-&#x20;             |
-
-&#x20;             ↓
-
-
-
-&#x20;       🤖 AI Incident Analysis
-
-&#x20;         (Future Enhancement)
+AI Incident Analysis (Future)
 
 ```
 
@@ -162,47 +110,51 @@ This project demonstrates a complete modern DevOps lifecycle:
 
 
 
-\## ✅ Application Layer
+\## Application
 
 
 
-\- Python Flask based AIOps application
-
-\- REST API health endpoint
-
-\- Prometheus metrics endpoint
-
-\- Lightweight containerized application
-
-\- Production-style deployment workflow
+✅ Python Flask based AIOps application
 
 
 
-
-
-\## ✅ CI/CD Automation
-
-
-
-Implemented Jenkins pipeline:
+✅ REST API health endpoint
 
 
 
-\- Source code checkout from GitHub
+✅ Prometheus metrics endpoint
 
-\- Docker image creation
+
+
+✅ Docker container support
+
+
+
+
+
+\## CI/CD Automation
+
+
+
+Jenkins pipeline includes:
+
+
+
+\- GitHub source checkout
+
+\- Docker image build
 
 \- Docker image verification
 
 \- Container deployment
 
-\- Application health validation
+\- Health validation
 
 
 
 
 
-\## ✅ Containerization
+\## Containerization
 
 
 
@@ -212,39 +164,35 @@ Docker implementation:
 
 \- Python 3.13 slim image
 
-\- Dependency management using requirements.txt
+\- Automated dependency installation
 
-\- Reproducible application environment
-
-\- Automated image build process
+\- Portable application environment
 
 
 
 
 
-\## ✅ Kubernetes Deployment
+\## Kubernetes Deployment
 
 
 
-Implemented Kubernetes features:
+Implemented:
 
 
 
-\- Deployment configuration
+\- Kubernetes Deployment
 
-\- Service exposure
+\- Kubernetes Service
 
-\- Multiple pod replicas
+\- Multiple replicas
 
-\- Container orchestration
-
-\- Cluster-based application availability
-
+\- Cluster-based deployment
 
 
 
 
-\## ✅ Monitoring \& Observability
+
+\## Monitoring
 
 
 
@@ -256,9 +204,7 @@ Monitoring stack:
 
 \- Grafana visualization
 
-\- Application health monitoring
-
-\- Infrastructure observability
+\- Application monitoring
 
 
 
@@ -268,35 +214,31 @@ Monitoring stack:
 
 
 
-\# 🏗️ System Architecture
+\# 🏗️ Architecture
 
 
 
 
 
-```
+```text
 
-&#x20;                   GitHub
-
-
-
-&#x20;                      |
+&#x20;                GitHub
 
 
 
-&#x20;                      ↓
+&#x20;                   |
+
+&#x20;                   v
 
 
 
-&#x20;             Jenkins CI/CD
+&#x20;             Jenkins Pipeline
 
 
 
-&#x20;                      |
+&#x20;                   |
 
-
-
-&#x20;                      ↓
+&#x20;                   v
 
 
 
@@ -304,11 +246,9 @@ Monitoring stack:
 
 
 
-&#x20;                      |
+&#x20;                   |
 
-
-
-&#x20;                      ↓
+&#x20;                   v
 
 
 
@@ -316,53 +256,53 @@ Monitoring stack:
 
 
 
-&#x20;                      |
+&#x20;                   |
+
+&#x20;                   v
 
 
 
-&#x20;                      ↓
+&#x20;             Kubernetes Cluster
 
 
 
-&#x20;               Kubernetes
+&#x20;             +-------------+
+
+&#x20;             |             |
+
+&#x20;             v             v
 
 
 
-&#x20;             /             \\
+&#x20;           Pod 1         Pod 2
 
 
 
-&#x20;            /               \\
+&#x20;             |             |
 
 
 
-&#x20;       Pod Replica 1     Pod Replica 2
+&#x20;             +-------------+
 
 
 
-&#x20;            \\               /
+&#x20;                   |
+
+&#x20;                   v
 
 
 
-&#x20;             \\             /
+&#x20;             Prometheus
 
 
 
-&#x20;                Prometheus
+&#x20;                   |
+
+&#x20;                   v
 
 
 
-&#x20;                      |
-
-
-
-&#x20;                      ↓
-
-
-
-&#x20;                 Grafana
-
-
+&#x20;                Grafana
 
 ```
 
@@ -382,27 +322,25 @@ Monitoring stack:
 
 | Category | Technology |
 
-|----------|------------|
+|---|---|
 
-| Programming Language | Python 3.13 |
+| Language | Python 3.13 |
 
 | Framework | Flask |
 
-| Container Platform | Docker |
+| Container | Docker |
 
-| CI/CD Tool | Jenkins |
+| CI/CD | Jenkins |
 
 | Version Control | Git + GitHub |
 
 | Orchestration | Kubernetes |
 
-| Local Kubernetes | Minikube |
+| Local Cluster | Minikube |
 
 | Monitoring | Prometheus |
 
 | Visualization | Grafana |
-
-| Operating System | Windows Host + Linux Containers |
 
 
 
@@ -418,97 +356,37 @@ Monitoring stack:
 
 
 
-```
+```text
 
 aiops-assistant/
 
 
 
-│
-
-
-
 ├── app.py
-
-│     └── Flask AIOps Application
-
-
-
-│
-
-
 
 ├── requirements.txt
 
-│     └── Python Dependencies
-
-
-
-│
-
-
-
 ├── Dockerfile
-
-│     └── Application Container Definition
-
-
-
-│
-
-
 
 ├── Jenkinsfile
 
-│     └── CI/CD Pipeline Configuration
-
-
-
-│
-
-
-
 ├── docker-compose.yml
 
-│     └── Local Container Setup
+
+
+├── k8s
+
+│   ├── deployment.yaml
+
+│   └── service.yaml
 
 
 
-│
-
-
-
-├── k8s/
-
-
-
-│     ├── deployment.yaml
-
-│     │       └── Kubernetes Deployment
-
-
-
-│     └── service.yaml
-
-│             └── Kubernetes Service
-
-
-
-│
-
-
-
-├── screenshots/
-
-
-
-│
+├── screenshots
 
 
 
 └── README.md
-
-
 
 ```
 
@@ -520,13 +398,13 @@ aiops-assistant/
 
 
 
-\# ⚙️ Installation \& Setup
+\# ⚙️ Installation
 
 
 
 
 
-\## 1. Clone Repository
+\## Clone Repository
 
 
 
@@ -570,13 +448,7 @@ python -m venv venv
 
 
 
-Activate environment:
-
-
-
-
-
-Windows:
+Activate:
 
 
 
@@ -590,7 +462,7 @@ venv\\Scripts\\activate
 
 
 
-Install dependencies:
+Install packages:
 
 
 
@@ -622,7 +494,7 @@ Application URL:
 
 
 
-```
+```text
 
 http://localhost:5000
 
@@ -632,7 +504,7 @@ http://localhost:5000
 
 
 
-Example Response:
+Response:
 
 
 
@@ -640,11 +512,11 @@ Example Response:
 
 {
 
-&#x20;   "application": "AIOps Assistant",
+&#x20;"application": "AIOps Assistant",
 
-&#x20;   "status": "Running",
+&#x20;"status": "Running",
 
-&#x20;   "version": "1.0"
+&#x20;"version": "1.0"
 
 }
 
@@ -664,9 +536,7 @@ Example Response:
 
 
 
-Build Docker image:
-
-
+Build image:
 
 
 
@@ -684,17 +554,9 @@ Run container:
 
 
 
-
-
 ```bash
 
-docker run -d \\
-
-\--name aiops-container \\
-
-\-p 5000:5000 \\
-
-aiops-assistant:latest
+docker run -d --name aiops-container -p 5000:5000 aiops-assistant:latest
 
 ```
 
@@ -726,79 +588,49 @@ docker ps
 
 
 
-Pipeline workflow:
+Pipeline Flow:
 
 
 
+```text
 
-
-```
-
-Git Checkout
-
-
+Checkout Code
 
 &#x20;     |
 
-
-
-&#x20;     ↓
-
-
+&#x20;     v
 
 Build Docker Image
 
+&#x20;     |
 
+&#x20;     v
+
+Verify Image
 
 &#x20;     |
 
-
-
-&#x20;     ↓
-
-
-
-Verify Docker Image
-
-
-
-&#x20;     |
-
-
-
-&#x20;     ↓
-
-
+&#x20;     v
 
 Deploy Container
 
-
-
 &#x20;     |
 
-
-
-&#x20;     ↓
-
-
+&#x20;     v
 
 Health Check
 
-
-
 ```
 
 
 
 
 
-Successful execution:
+Successful build:
 
 
 
-
-
-```
+```text
 
 Build completed successfully!
 
@@ -832,9 +664,7 @@ minikube start
 
 
 
-Check cluster:
-
-
+Check nodes:
 
 
 
@@ -849,8 +679,6 @@ kubectl get nodes
 
 
 Deploy application:
-
-
 
 
 
@@ -872,8 +700,6 @@ Check pods:
 
 
 
-
-
 ```bash
 
 kubectl get pods
@@ -884,25 +710,7 @@ kubectl get pods
 
 
 
-Check service:
-
-
-
-
-
-```bash
-
-kubectl get service
-
-```
-
-
-
-
-
 Access application:
-
-
 
 
 
@@ -916,9 +724,7 @@ minikube service aiops-service
 
 
 
-Example output:
-
-
+Example:
 
 
 
@@ -950,13 +756,11 @@ Example output:
 
 
 
-\## Prometheus Metrics Endpoint
+Prometheus metrics:
 
 
 
-
-
-```
+```text
 
 http://localhost:5000/metrics
 
@@ -966,21 +770,11 @@ http://localhost:5000/metrics
 
 
 
-Example metrics:
+Example:
 
 
 
-
-
-```
-
-\# HELP requests\_total Total number of requests
-
-
-
-\# TYPE requests\_total counter
-
-
+```text
 
 requests\_total 1
 
@@ -990,7 +784,7 @@ requests\_total 1
 
 
 
-Collected metrics:
+Metrics collected:
 
 
 
@@ -998,7 +792,7 @@ Collected metrics:
 
 \- Service availability
 
-\- Performance information
+\- Performance data
 
 
 
@@ -1014,49 +808,45 @@ Collected metrics:
 
 
 
-\## 🤖 AI Incident Analysis
+\## AI Incident Analysis
+
+
+
+Future AI capabilities:
+
+
+
+\- Log anomaly detection
+
+\- Machine learning based alerts
+
+\- Automatic root cause analysis
+
+\- AI troubleshooting suggestions
 
 
 
 
 
-Planned AI capabilities:
+\## Advanced DevOps Features
 
 
 
-\- Log anomaly detection using Machine Learning
-
-\- Automatic incident classification
-
-\- Root Cause Analysis (RCA)
-
-\- AI-generated troubleshooting recommendations
-
-
-
-
-
-\## ☁️ Advanced DevOps Features
-
-
-
-
-
-Future improvements:
+Planned:
 
 
 
 \- AWS Cloud deployment
 
-\- Terraform Infrastructure as Code
+\- Terraform automation
 
-\- Kubernetes Autoscaling
+\- Kubernetes autoscaling
 
-\- GitOps using ArgoCD
+\- ArgoCD GitOps
 
-\- ELK Stack logging
+\- ELK logging stack
 
-\- AI Kubernetes Operations Agent
+\- AI Kubernetes Agent
 
 
 
@@ -1074,7 +864,7 @@ Future improvements:
 
 | Component | Status |
 
-|-----------|--------|
+|---|---|
 
 | Flask Application | ✅ Completed |
 
@@ -1090,7 +880,7 @@ Future improvements:
 
 | Grafana Monitoring | ✅ Completed |
 
-| AI Incident Analysis | 🔄 Future Development |
+| AI Incident Analysis | 🔄 Future |
 
 
 
@@ -1110,9 +900,7 @@ Future improvements:
 
 
 
-
-
-\*\*Aspiring DevOps Engineer | Cloud Engineer\*\*
+Aspiring DevOps Engineer | Cloud Engineer
 
 
 
@@ -1152,9 +940,7 @@ Skills:
 
 
 
-This project demonstrates practical experience with:
-
-
+This project demonstrates:
 
 
 
@@ -1162,7 +948,7 @@ This project demonstrates practical experience with:
 
 
 
-✅ Containerization
+✅ Docker Containerization
 
 
 
@@ -1170,15 +956,11 @@ This project demonstrates practical experience with:
 
 
 
-✅ Monitoring \& Observability
+✅ Monitoring and Observability
 
 
 
 ✅ DevOps Automation Workflow
-
-
-
-✅ Infrastructure Deployment
 
 
 
@@ -1188,9 +970,5 @@ This project demonstrates practical experience with:
 
 
 
-\## ⭐ Support
-
-
-
-If you find this project useful, consider giving it a star ⭐
+⭐ If you find this project useful, give it a star!
 
