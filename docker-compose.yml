@@ -1,0 +1,7 @@
+services:
+  aiops-app:
+    build: .
+    container_name: aiops-app
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
