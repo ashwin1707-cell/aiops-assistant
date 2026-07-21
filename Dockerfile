@@ -1,9 +1,13 @@
-FROM jenkins/jenkins:lts-jdk21
+FROM python:3.13-slim
 
-USER root
+WORKDIR /app
 
-RUN apt-get update && \
-    apt-get install -y docker.io && \
-    apt-get clean
+COPY requirements.txt .
 
-USER jenkins
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+EXPOSE 5000
+
+CMD ["python", "app.py"]
